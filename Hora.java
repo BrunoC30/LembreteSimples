@@ -13,13 +13,17 @@ public class Hora{
     String lembrete = sc.nextLine();
     System.out.println("para que horas vai ser esse lembrete? \thh:mm");
     String dado = sc.nextLine();
-    String alarme = LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
-    alarme+= " "+dado;
+
+    //conversão do tipo data-hora para tipo String usando formatação para colocar em formato customizado
+    String alarme = LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"))+" "+dado;
+
 
     Boolean loop = true;
 
+    //criação de um formato de data
     DateTimeFormatter  fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
 
+    //aqui a data fornecida é constantemente checada com o horario atual
     while(loop){
        String dataAtual = LocalDateTime.now().format(fmt);
     
