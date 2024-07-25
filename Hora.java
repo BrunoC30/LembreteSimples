@@ -20,7 +20,7 @@ public class Hora{
 
     Boolean loop = true;
 
-    //criação de um formato de data
+    //formato de data
     DateTimeFormatter  fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
 
     //aqui a data fornecida é constantemente checada com o horario atual
