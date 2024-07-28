@@ -23,7 +23,7 @@ public class Hora{
     //formato de data
     DateTimeFormatter  fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
 
-    //aqui a data fornecida é constantemente checada com o horario atual
+    //aqui a data fornecida é constantemente checada com o horario atual 
     while(loop){
        String dataAtual = LocalDateTime.now().format(fmt);
     
